@@ -1,0 +1,39 @@
+
+.form{
+    background-image: url("./images/7270403.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.label{
+    color: white;
+}
+
+.titulo{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.contenedor{
+    margin-bottom: 10px;
+}
+
+.error{
+    position: absolute;
+    color: white;
+}
+
+.lista{
+    color: white;
+}
+
+.input{
+    height: 25px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin:5px;
+}

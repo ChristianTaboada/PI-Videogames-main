@@ -1,0 +1,70 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.all{
+    background-image: url("./images/2825787.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.img{
+    width: 60vw;
+    height: 80vh;
+    border: 2px solid rgba(255, 255, 255, 0.489);
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.09);
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.313);
+    transition: transform 0.4s;
+    cursor: pointer;
+    opacity: 0.94;
+    margin-bottom: 20px;
+}
+
+.img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px  rgba(193, 8, 8, 0.766);
+}
+
+.description{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 70vw;
+}
+
+.rating{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.genres{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.platforms{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.released{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+

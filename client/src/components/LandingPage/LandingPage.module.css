@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.all{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("./images/the-last-of-us-part-1-remake-joel-ellie-hd-wallpaper-uhdpaper.com-319@1@h.jpg");
+    background-size: cover;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    padding: 0px;
+    color: rgb(252, 224, 7);
+    display: flex;
+    align-self: flex-end;
+    margin-top: 100px;
+    margin-right: 25px;
+}
+
+.subtitle{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    align-self: flex-end;
+    color: #2a2623;
+    margin-top: 250px;
+    margin-right: 15px;
+    height: 200px;
+    white-space: pre-line;
+}
+
+.btn_home{
+    cursor: pointer;
+    position: absolute;
+    left: 78%;
+    top: 60%;
+    background-color: yellow;
+    font-size: 20px;
+}
