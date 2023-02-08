@@ -54,7 +54,7 @@ const getVideogamesHandler = async (req,res) => {
       let genresDb = await Genre.findAll({
         where: { name: genres},
       });
-      console.log(genresDb)
+      //console.log(genresDb)
       await videogameCreated.addGenre(genresDb);
 
       res.status(200).send(genresDb);
