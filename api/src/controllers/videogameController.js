@@ -19,7 +19,7 @@ const getApiInfoById = async function(id) {
             platforms: urlData.data.platforms.map(p => p.platform.name),
             genres: urlData.data.genres.map(g => g.name)
         }]
-        console.log(gamesData)
+        //console.log(gamesData)
         return gamesData;
 
     } catch(error) {

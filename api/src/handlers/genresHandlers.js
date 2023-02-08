@@ -6,7 +6,7 @@ const getAllGenresHandler = async(req,res) => {
         await getAllGenres();
         const allGenres = await Genre.findAll();
         res.status(200).send(allGenres);
-        console.log(allGenres)
+        //console.log(allGenres)
     }catch(error){
         console.log(error)
     }
