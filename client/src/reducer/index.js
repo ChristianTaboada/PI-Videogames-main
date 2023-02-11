@@ -7,6 +7,7 @@ import { ORDER_BY_NAME } from "../actions"
 import { ORDER_BY_RATING } from "../actions"
 import { FILTER_BY_CREATED } from "../actions"
 import { FILTER_BY_GENRE } from "../actions"
+import { RESET } from "../actions"
 
 const initialState = {
     allVideogames: [],
@@ -110,6 +111,11 @@ function rootReducer(state= initialState,action){
                 return{
                     ...state,
                     videogames: action.payload === "Db" ? createdFilter : state.allVideogames
+                }
+            case RESET:
+                return {
+                    ...state,
+                    detail:[]
                 }
         default:
             return state;

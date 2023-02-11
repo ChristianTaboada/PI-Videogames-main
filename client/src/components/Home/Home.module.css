@@ -1,29 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-
 .all{
+    background-color: #202020;
+    background-image: url('./images/dbmhgae-bc0dabb6-a1a1-408a-b63b-bf8f74d2c7ad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98,9vw;
+    height: 150vh;
+    
+}
+.all2{
     background-image: url("./images/4492167.gif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 98,9vw;
     height: 140vh;
 }
+.header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d34d10;
+    border: 2px solid rgba(255, 255, 255, 0.489);
+	border-radius: 10px;
+}
 
 .title{
+    font-family: 'VT323', monospace;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .btn_crear{
+    font-family: 'VT323', monospace;
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 45px;
     cursor: pointer;
 }
 
 .btn_select{
+    font-family: 'VT323', monospace;
     height: 25px;
     width: 180px;
     border: 1px solid black;
@@ -31,6 +53,7 @@
 }
 
 .btn_refresh{
+    font-family: 'VT323', monospace;
     height: 25px;
     width: 250px;
     border: 1px solid black;

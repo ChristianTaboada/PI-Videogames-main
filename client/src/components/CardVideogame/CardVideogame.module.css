@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-
+.todo{
+    margin: auto;
+}
 .card{
-    border: 2px solid rgba(255, 255, 255, 0.489);
-	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.09);
 	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.313);
-	width: 285px;
-	height: 240px;
+    border: 2px solid rgba(255, 255, 255, 0.489);
+	border-radius: 10px;
+    background:linear-gradient(90deg,#dd5e06,#f0d860);
+    margin-left: 30px;
+    width: 250px;
+	height: 250px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	display: flex;
@@ -19,6 +25,7 @@
     transition: transform 0.4s;
     cursor: pointer;
     opacity: 0.92;
+    
 }
 
 .card:hover{
@@ -28,23 +35,25 @@
 }
 
 .name{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     color: white;
     font-size: 20px;
 }
 
 .genres{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     color: white;
     font-size: 16px;
 }
 
 .rating{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     color:white;
     font-size: 16px;
 }
 
 .img{
+    height: 70%;
+    width: 100%;
     border-radius: 10px;
 }

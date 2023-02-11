@@ -1,47 +1,96 @@
+ @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
 .all{
+    
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-position: center;
-    background-image: url("./images/the-last-of-us-part-1-remake-joel-ellie-hd-wallpaper-uhdpaper.com-319@1@h.jpg");
     background-size: cover;
+    background-image: url("./images/4492167.gif");
+    
 }
 
 .title{
-    font-family: 'Roboto', sans-serif;
-    font-size: 80px;
+    font-family: 'VT323', monospace;
+    font-size: 120px;
     padding: 0px;
-    color: rgb(252, 224, 7);
+    color: #ff0074;
     display: flex;
-    align-self: flex-end;
-    margin-top: 100px;
-    margin-right: 25px;
+    align-self: center;
+    
+    
 }
 
 .subtitle{
     position: absolute;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    align-self: flex-end;
-    color: #2a2623;
-    margin-top: 250px;
+    font-family: 'VT323', monospace;
+    font-size: 45px;
+    align-self: center;
+    color: white;
+    text-shadow: 0px 0px 10px #ff0074;
+    margin-top: 8%;
     margin-right: 15px;
     height: 200px;
     white-space: pre-line;
+    
 }
 
 .btn_home{
+    color: white;
+    height: 5%;
+    width: 10%;
+    font-family: 'VT323', monospace;
     cursor: pointer;
     position: absolute;
-    left: 78%;
-    top: 60%;
-    background-color: yellow;
-    font-size: 20px;
+    left: 46%;
+    top: 29%;
+    background-color: #ff0074;
+    font-size: 30px;
+}
+
+.slider_container{
+    margin-top: 20px;
+    background-image: url("./images/imagen1.png");
+    background-size:cover;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    animation: animate 15s infinite;
+}
+
+.slider_position{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@keyframes animate {
+    20%{
+        background-image: url("./images/imagen5.jpg");
+        background-size: cover;
+    }
+    40%{
+        background-image: url("./images/imagen4.jpg");
+        background-size: cover;
+    }
+    60%{
+        background-image: url("./images/imagen3.jpg");
+        background-size: cover;
+    }
+    80%{
+        background-image: url("./images/imagen2.png");
+        background-size: cover;
+    }
+    100%{
+        background-image: url("./images/imagen1.png");
+        background-size: cover;
+    }
 }

@@ -9,6 +9,7 @@ export const ORDER_BY_NAME = 'ORDER_BY_NAME'
 export const ORDER_BY_RATING = 'ORDER_BY_RATING'
 export const FILTER_BY_CREATED = 'FILTER_BY_CREATED'
 export const FILTER_BY_GENRE = 'FILTER_BY_GENRE'
+export const RESET = 'RESET'
 
 export function getAllVideogames(){
     return async function (dispatch){
@@ -61,6 +62,7 @@ export function getNameVideogames(name){
 }
 
 export function getDetail(id){
+    if(id){
     return async function (dispatch){
         try{
             var json = await axios.get(`/videogame/${id}`);
@@ -73,6 +75,10 @@ export function getDetail(id){
         }
     }
 }
+return {
+    type: 'RESET',
+}
+};
 
 export function filterByGenre(payload){
     console.log(payload)
@@ -100,6 +106,12 @@ export function orderByRating(payload){
     return{
         type:ORDER_BY_RATING,
         payload
+    }
+}
+
+export function reset(){
+    return{
+        type:RESET
     }
 }
 

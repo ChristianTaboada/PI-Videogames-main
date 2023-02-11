@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 .paginado{
     font-size: 1rem;
     display: flex;
@@ -8,18 +9,19 @@
 }
 
 .number{
+    font-family: 'VT323', monospace;
     background-color: transparent;
     outline: none;
     border: none;
     font-weight: bold;
-    color: white;
+    color: #17165c;
     font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
     margin-bottom: 2rem;
-    background-color: rgba(193, 8, 8, 0.766);
+    background:linear-gradient(90deg,#dd5e06,#f0d860);
     transition: transform 0.4s;
     cursor: pointer;
     border: 1px solid black;
@@ -32,9 +34,81 @@
 
 .currentPage{
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: 'VT323', monospace;
+    color: #1b56d6;
     position: absolute;
     left: 46%;
     top: 30%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 2rem;
+    background:linear-gradient(90deg,#dd5e06,#f0d860);
+    transition: transform 0.4s;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.currentPage:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 15px #bd0505;
+}
+
+.number2{
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+}
+
+.prev{
+    font-family: 'VT323', monospace;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #17165c;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 2rem;
+    background:linear-gradient(90deg,#dd5e06,#f0d860);
+    transition: transform 0.4s;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.prev:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 15px #bd0505;
+}
+
+.next{
+    font-family: 'VT323', monospace;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #17165c;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 2rem;
+    background:linear-gradient(90deg,#dd5e06,#f0d860);
+    transition: transform 0.4s;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.next:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 15px #bd0505;
 }

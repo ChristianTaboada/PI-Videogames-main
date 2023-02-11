@@ -1,0 +1,26 @@
+.loader{
+    background-image: url('./images/dbmhgae-bc0dabb6-a1a1-408a-b63b-bf8f74d2c7ad.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imagen{
+    position: relative;
+    top: 20%;
+    right: 15%;
+    height: 200px;
+    width: 150px;
+    background-image: url('./images/sonicwait.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+}
+
+.loading{
+    position: absolute;
+    left: 40%;
+    font-size: 100px;
+    color: white;
+
+}

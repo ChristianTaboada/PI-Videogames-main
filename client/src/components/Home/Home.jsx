@@ -5,6 +5,7 @@ import { filterByCreated, filterByGenre, getAllVideogames, getGenres, orderByNam
 import { Link } from "react-router-dom";
 import Pagination from "../Pagination/Pagination";
 import SearchBar from "../SearchBar/SearchBar";
+import Loader from "../Loader/Loader"
 import axios from "axios";
 import style from './Home.module.css'
 
@@ -29,6 +30,10 @@ const Home = () =>{
     },[dispatch])
 
     const [orden,setOrden] = useState("")
+
+    if(!allVideogames.length){
+        return <Loader/>;
+    }
 
 function handleOrderByName(element){
     element.preventDefault()
@@ -57,15 +62,17 @@ function handleClick(element){
 }
     return(
         <div className={style.all}>
+        <header className={style.header}>
         <h1 className={style.title}>Gamer Quest</h1>
+        <SearchBar
+        setCurrentPage={setCurrentPage}
+        />
         <Link to='/videogames' className={style.btn_crear}>Crear Videogame</Link>
+        </header>
         <br/>
         <button className={style.btn_refresh} onClick={element =>{handleClick(element)}}>
             Volver a cargar los Videojuegos
         </button>
-        <SearchBar
-        setCurrentPage={setCurrentPage}
-        />
         <div>
         <select className={style.btn_select} onChange={handleOrderByName}>
     <option className={style.btn_select} disabled selected defaultValue>Alphabetical order</option>

@@ -5,8 +5,11 @@ import Home from './components/Home/Home';
 import AddVideogame from './components/AddVideogame/AddVideogame';
 import DetailVideogame from './components/DetailVideogame/DetailVideogame';
 import axios from 'axios';
-//axios.defaults.baseURL = 'http://localhost:3001/';
-axios.defaults.baseURL = 'https://pi-videogames-main-production-bc07.up.railway.app';
+// Para ejecutar el Back en localhost!!!!!!!!!
+axios.defaults.baseURL = 'http://localhost:3001/';
+
+// Para ejecutar el Back en la Web!!!!!!!!!!!
+//axios.defaults.baseURL = 'https://pi-videogames-main-production-bc07.up.railway.app';
 
 
 function App() {
