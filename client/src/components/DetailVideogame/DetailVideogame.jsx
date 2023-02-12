@@ -27,13 +27,13 @@ export default function Detail (props){
             {
                 myVideogame.length >0 ?
                 <div className={style.form}>
-                    <h1 className={style.name}>{myVideogame[0].name}</h1>
                     <img  className={style.img} alt='not found' src= {myVideogame[0].image} />
-                    <p className={style.description}>description: {myVideogame[0].description}</p>
-                    <p className={style.rating}>rating: {myVideogame[0].rating}</p>
+                    <h1 className={style.name}>{myVideogame[0].name}</h1>
+                    <p className={style.description}>{myVideogame[0].description}</p>
                     <h4 className={style.genres}>{!myVideogame[0].createdInDb? myVideogame[0].genres + ' ' : myVideogame[0].genres.map(element => element.name + (' '))}</h4>
                     <h4 className={style.platforms}>{myVideogame[0].platforms + ' '}</h4>
                     <p className={style.released}>released: {myVideogame[0].released}</p>
+                    <p className={style.rating}>rating: {myVideogame[0].rating}</p>
                     
                 </div>
                 : <Loader/>

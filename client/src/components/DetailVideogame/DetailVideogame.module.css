@@ -2,24 +2,30 @@
     font-family: 'Roboto', sans-serif;
 }
 .all{
-    background-image: url("./images/2825787.gif");
+    background-image: url("./images/pxfuel.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 .form{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .name{
     color: white;
     font-size: 40px;
+    margin-top: 25px;
     margin-bottom: 10px;
+    margin-right: 50px;
+    width: 40vw;
 }
 
 .img{
-    width: 60vw;
-    height: 80vh;
+    width: 50vw;
+    height: 70vh;
     border: 2px solid rgba(255, 255, 255, 0.489);
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.09);
@@ -28,6 +34,11 @@
     cursor: pointer;
     opacity: 0.94;
     margin-bottom: 20px;
+    align-self: flex-start;
+    position: absolute;
+    margin-left: 40px;
+
+    
 }
 
 .img:hover{
@@ -40,31 +51,42 @@
     color: white;
     font-size: 20px;
     margin-bottom: 10px;
-    width: 70vw;
+    overflow: auto;
+    width: 40vw;
+    height: 40vh;
+    margin-right: 50px;
 }
 
 .rating{
     color: white;
     font-size: 25px;
     margin-bottom: 10px;
+    margin-right: 50px;
+    width: 40vw;
 }
 
 .genres{
     color: white;
     font-size: 25px;
     margin-bottom: 10px;
+    margin-right: 50px;
+    width: 40vw;
 }
 
 .platforms{
     color: white;
     font-size: 25px;
     margin-bottom: 10px;
+    margin-right: 50px;
+    width: 40vw;
 }
 
 .released{
     color: white;
     font-size: 25px;
     margin-bottom: 10px;
+    margin-right: 50px;
+    width: 40vw;
 }
 
 
