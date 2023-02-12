@@ -47,7 +47,7 @@ function rootReducer(state= initialState,action){
                 }
             case ORDER_BY_NAME:
                 const sortedName = action.payload === "A-Z"?
-                state.allVideogames.sort((a,b) =>{
+                state.videogames.sort((a,b) =>{
                     if(a.name > b.name){
                         return 1;
                     }
@@ -56,7 +56,7 @@ function rootReducer(state= initialState,action){
                     }
                     return 0
                 })
-                : state.allVideogames.sort((a,b) =>{
+                : state.videogames.sort((a,b) =>{
                     if(a.name > b.name){
                         return -1;
                     }
@@ -68,10 +68,11 @@ function rootReducer(state= initialState,action){
                 return {
                     ...state,
                     videogames: sortedName,
+                    allVideogames: sortedName,
                 };
             case ORDER_BY_RATING:
                 const sortedRating = action.payload === "min_rating"?
-                state.allVideogames.sort((a,b) =>{
+                state.videogames.sort((a,b) =>{
                     if(a.rating > b.rating){
                         return 1;
                     }
@@ -80,7 +81,7 @@ function rootReducer(state= initialState,action){
                     }
                     return 0
                 })
-                : state.allVideogames.sort((a,b) =>{
+                : state.videogames.sort((a,b) =>{
                     if(a.rating > b.rating){
                         return-1;
                     }
@@ -92,6 +93,7 @@ function rootReducer(state= initialState,action){
                 return {
                     ...state,
                     videogames: sortedRating,
+                    allVideogames: sortedRating,
                 };
             case FILTER_BY_GENRE:
                 const statusFiltered = action.payload === "All" ?
