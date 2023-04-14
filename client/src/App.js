@@ -9,7 +9,8 @@ import axios from 'axios';
 //axios.defaults.baseURL = 'http://localhost:3001/';
 
 // Para ejecutar el Back en la Web!!!!!!!!!!!
-axios.defaults.baseURL = 'https://pi-videogames-main-production-bc07.up.railway.app';
+axios.defaults.baseURL = 'pi-videogames-main-production-7057.up.railway.app';
+
 
 
 function App() {
