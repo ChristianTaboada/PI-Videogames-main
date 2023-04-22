@@ -16,7 +16,7 @@ const getApiInfo = async (id) => {
                 id: element.id,
                 name: element.name,
                 image: element.background_image,
-                genres: element.genres?.map((element) => element.name).toString(), //
+                genres: element.genres?.map((element) => element.name).toString(),
                 released: element.released,
                 rating: element.rating,
                 platforms: element.platforms?.map((element) => element.platform.name).toString(),
