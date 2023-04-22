@@ -12,7 +12,7 @@ import axios from 'axios';
 //axios.defaults.baseURL = 'pi-videogames-main-production-cd7f.up.railway.app';
 axios.defaults.baseURL =
 	process.env.REACT_APP_API ||
-	'pi-videogames-main-production-cd7f.up.railway.app/';
+	'https://pi-videogames-main-production-cd7f.up.railway.app/';
 
 
 
